@@ -1,0 +1,88 @@
+/* Imports */
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Se define el grid*/
+.body{
+
+    display: grid;
+
+    grid-template-areas:
+    "header" "header" "header" "header"
+    
+    "section" "section" "section" "section"
+    "section" "section" "section" "section"
+
+    "section2" "section2" "section2" "section2"
+    "section2" "section2" "section2" "section2"
+
+    "footer" "footer" "footer" "footer";
+}
+
+/* 
+Header modificaciones:
+-Se le asigna el area del grid (header)
+-Se acomoda el header
+-Se cambiaron las fuentes
+-Se modifico el size del icono 
+*/
+
+.header{
+    grid-area: header;
+    border: solid 2px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0% 4%;
+    background-color: #b6e3e9;
+}
+
+.header_nav_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_nav_ul li{
+    margin: 0% 4%;
+    display: flex;
+    padding-right: 15%;
+}
+
+.header_nav_ul li a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    color:black;
+}
+
+.header_a img{
+    width: 15%;
+    height: 10%;
+    border: solid 2px black
+}
+
+/* Section 1 Modificaciones: */
+
+.section{
+    padding-top: 10%;
+    grid-area: section;
+    background-color:#b6e3e9;
+    display: flex;
+}
+
+.section_h{
+    font-family:'Oswald', sans-serif;
+    font-size:500%;
+}
