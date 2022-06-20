@@ -1,6 +1,6 @@
 /* Imports */
-/* font-family: 'Cairo', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+/* font-family: 'Oxygen', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 /* Se resetea el css */
 *{
@@ -19,8 +19,8 @@ body{
     ;
     grid-template-rows: 1fr 3fr 2fr 1fr;
     grid-gap: 15px;
-    background-color: #06113C;
-    font-family: 'Cairo', sans-serif;
+    background-color: #FAFAFA;
+    font-family: 'Oxygen', sans-serif;
 
 }
 
@@ -33,10 +33,15 @@ se acomoda
 */
 .header{
     grid-area: header;
-    background-color: #FF8C32;
+    background-color: #FF7E67;
     display: flex;
     justify-content: space-evenly;
     font-size: x-large;
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
 }
 
 .header_nav_ul{
@@ -44,6 +49,7 @@ se acomoda
     text-decoration: none;
     display: flex;
     justify-content: space-evenly;
+    align-content: center;
 }
 
 .header_nav_ul li{
@@ -75,7 +81,7 @@ Se agrego un boton que lleva a ofertas
  */
 .section{
     grid-area:section;
-    background-color: #DDDDDD;
+    background-color: #07689F;
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -90,18 +96,18 @@ Se agrego un boton que lleva a ofertas
 }
 
 .section_h{
-    color: #06113C;
+    color: #FAFAFA;
     font-size: 400%;
 }
 
 .section_p{
-    color: #06113C;
+    color: #FAFAFA;
     font-size: xx-large;
     padding: 3%;
 }
 
 .boton{
-    background-color: #06113C;
+    background-color: #FF7E67;
     border-radius: 3%;
     padding: 0.5% 1%;
     text-decoration: none;
@@ -114,7 +120,7 @@ Se agrego un boton que lleva a ofertas
 
 .section_2{
     grid-area: section2;
-    background-color: #DDDDDD;
+    background-color: #07689F;
     padding: 2% 3%;
     margin: 0% 2%;
 }
@@ -122,7 +128,7 @@ Se agrego un boton que lleva a ofertas
 .section_redes{
     display: flex;
     justify-content: center;
-    color: #06113C;
+    color: #FAFAFA;
     font-size: xx-large;
 }
 
@@ -144,37 +150,75 @@ Se agrego un boton que lleva a ofertas
 
 .section_libros{
     grid-area: section;
-    background-color: #DDDDDD;
+    background-color: #07689F;
     display: flex;
     margin: 0% 2%;
 }
 
+.section_libros div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_lh{
+    color: #FAFAFA;
+    font-size: 400%;
+}
+
+.section_lh2{
+    color: #FAFAFA;
+    font-size: 400%;
+}
+
+
 .section_libros_productos{
     grid-area: section2;
-    background-color: #DDDDDD;
+    background-color: #07689F;
     display: flex;
     padding: 3% 1%;
     justify-content:space-around;
     margin: 0% 2%;
-
 }
 
 .section_libros_productos img{
     height: 35vh;
     width:16vw;
-    border: #06113C solid 3px;
+    border: #A2D5F2 solid 3px;
 }
 
 /* Inicio de modificacion de la seccion comics */
 
 .section_comics{
-    background-color: #DDDDDD;
+    background-color: #07689F;
     display: flex;
-    margin: 0% 2%;
+    margin: 1% 2%;
+}
+
+.section_comics div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_ch{
+    color: #FAFAFA;
+    font-size: 400%;
+}
+
+.section_ch2{
+    color: #FAFAFA;
+    font-size: 400%;
+}
+
+.section_comics img{
+    margin: 2%;
 }
 
 .section_comics_productos{
-    background-color: #DDDDDD;
+    background-color: #07689F;
     padding: 2% 3%;
     display: flex;
     justify-content: space-around;
@@ -184,20 +228,21 @@ Se agrego un boton que lleva a ofertas
 .section_comics_productos img{
     height: 35vh;
     width: 16vw;
-    border: #06113C solid 3px;
+    border: #A2D5F2 solid 3px;
 }
 
 /* Fin de la modificacion de seccion comics */
 /* Inicio de la modificacion de la seccion ofertas */
 .section_ofertas{
-    background-color: #DDDDDD;
+    background-color: #A2D5F2;
     padding: 2% 3%;
+    margin: 0% 2%;
     
 }
 
 .mistborn_collection{
     padding: 1%;
-    background-color: #FF8C32;
+    background-color: #07689F;
     margin: 1%;
     display: flex;
     align-content: center;
@@ -207,10 +252,21 @@ Se agrego un boton que lleva a ofertas
     height: 36vh;
     width: fit-content;
 }
+.mistborn_collection div h2, .mistborn_collection div p {
+    color: #FAFAFA;
+    font-size: 170%;
+}
+
+.mistborn_collection div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .harry_collection{
     padding: 1%;
-    background-color: blue;
+    background-color: #07689F;
     margin: 1%;
     display: flex;
     align-content: center;
@@ -221,9 +277,21 @@ Se agrego un boton que lleva a ofertas
     width: 35vw;
 }
 
+.harry_collection div h2, .harry_collection div p {
+    color: #FAFAFA;
+    font-size: 170%;
+}
+
+.harry_collection div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .starwars_collection{
     padding: 1%;
-    background-color: lightseagreen;
+    background-color: #07689F;
     margin: 1%;
     display: flex;
     align-content: center;
@@ -234,13 +302,45 @@ Se agrego un boton que lleva a ofertas
     height: fit-content;
     width: 35vw;
 }
+
+.starwars_collection div h2, .starwars_collection div p {
+    color: #FAFAFA;
+    font-size: 170%;
+}
+
+.starwars_collection div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
 /* Se termina la modificacion de seccion oferta */
 
 /*Inicio de modificacion de seccion nosotros  */
 .section_nosotros{
-    background-color: #DDDDDD;
+    background-color: #07689F;
     padding: 2% 3%;
+    margin: 0% 2%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.section_nosotros_h2{
+    font-size: 300%;
+    color: #FAFAFA;
+    margin-bottom: 1%;
+}
+
+.section_nosotros p{
+    color: #FAFAFA;
+    font-size: 150%;
+    margin: 2% 0% ;
+    
+}
+
+
 
 
 /* Inicio de la seccion footer */
@@ -249,7 +349,7 @@ Se cambio el size
  */
 .footer{
     grid-area:footer;
-    background-color: #FF8C32;
+    background-color: #FF7E67;
     position: fixed;
     bottom: 0;
 
