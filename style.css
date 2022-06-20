@@ -19,7 +19,6 @@ body{
     ;
     grid-template-rows: 1fr 3fr 2fr 1fr;
     grid-gap: 15px;
-    margin: 1% 3%;
     background-color: #06113C;
     font-family: 'Cairo', sans-serif;
 
@@ -80,6 +79,7 @@ Se agrego un boton que lleva a ofertas
     display: flex;
     justify-content: center;
     align-content: space-between;
+    margin: 0% 2%;
 }
 
 .section div{
@@ -116,6 +116,7 @@ Se agrego un boton que lleva a ofertas
     grid-area: section2;
     background-color: #DDDDDD;
     padding: 2% 3%;
+    margin: 0% 2%;
 }
 
 .section_redes{
@@ -139,6 +140,109 @@ Se agrego un boton que lleva a ofertas
 
 /* Fin de la seccion 2  */
 
+/* Inicio de la modificacion de las seccion de "Libros" */
+
+.section_libros{
+    grid-area: section;
+    background-color: #DDDDDD;
+    display: flex;
+    margin: 0% 2%;
+}
+
+.section_libros_productos{
+    grid-area: section2;
+    background-color: #DDDDDD;
+    display: flex;
+    padding: 3% 1%;
+    justify-content:space-around;
+    margin: 0% 2%;
+
+}
+
+.section_libros_productos img{
+    height: 35vh;
+    width:16vw;
+    border: #06113C solid 3px;
+}
+
+/* Inicio de modificacion de la seccion comics */
+
+.section_comics{
+    background-color: #DDDDDD;
+    display: flex;
+    margin: 0% 2%;
+}
+
+.section_comics_productos{
+    background-color: #DDDDDD;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 2%;
+}
+
+.section_comics_productos img{
+    height: 35vh;
+    width: 16vw;
+    border: #06113C solid 3px;
+}
+
+/* Fin de la modificacion de seccion comics */
+/* Inicio de la modificacion de la seccion ofertas */
+.section_ofertas{
+    background-color: #DDDDDD;
+    padding: 2% 3%;
+    
+}
+
+.mistborn_collection{
+    padding: 1%;
+    background-color: #FF8C32;
+    margin: 1%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.mistborn_collection img{
+    height: 36vh;
+    width: fit-content;
+}
+
+.harry_collection{
+    padding: 1%;
+    background-color: blue;
+    margin: 1%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.harry_collection img{
+    height: fit-content;
+    width: 35vw;
+}
+
+.starwars_collection{
+    padding: 1%;
+    background-color: lightseagreen;
+    margin: 1%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.starwars_collection img{
+    height: fit-content;
+    width: 35vw;
+}
+/* Se termina la modificacion de seccion oferta */
+
+/*Inicio de modificacion de seccion nosotros  */
+.section_nosotros{
+    background-color: #DDDDDD;
+    padding: 2% 3%;
+}
+
+
 /* Inicio de la seccion footer */
 /*Se cambio el color de background
 Se cambio el size 
@@ -146,6 +250,11 @@ Se cambio el size
 .footer{
     grid-area:footer;
     background-color: #FF8C32;
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    margin-top: auto;
 }
 
 .footer_ul{
@@ -153,6 +262,7 @@ Se cambio el size
     display: flex;
     justify-content: flex-end;
     margin-right: 1%;
+    
 }
 
 .footer_ul li a img{
