@@ -50,6 +50,7 @@ se acomoda
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    font-size: large;
 }
 
 .header_nav_ul li{
@@ -191,6 +192,7 @@ Se agrego un boton que lleva a ofertas
 /* Inicio de modificacion de la seccion comics */
 
 .section_comics{
+    grid-area: section;
     background-color: #07689F;
     display: flex;
     margin: 1% 2%;
@@ -218,6 +220,7 @@ Se agrego un boton que lleva a ofertas
 }
 
 .section_comics_productos{
+    grid-area: section2;
     background-color: #07689F;
     padding: 2% 3%;
     display: flex;
@@ -234,6 +237,7 @@ Se agrego un boton que lleva a ofertas
 /* Fin de la modificacion de seccion comics */
 /* Inicio de la modificacion de la seccion ofertas */
 .section_ofertas{
+    grid-area: section;
     background-color: #A2D5F2;
     padding: 2% 3%;
     margin: 0% 2%;
@@ -319,6 +323,7 @@ Se agrego un boton que lleva a ofertas
 
 /*Inicio de modificacion de seccion nosotros  */
 .section_nosotros{
+    grid-area: section;
     background-color: #07689F;
     padding: 2% 3%;
     margin: 0% 2%;
@@ -370,3 +375,374 @@ Se cambio el size
     width: 3vw;
 }
 /* Fin de la seccion footer */
+
+/* Mobile */
+@media only screen and (max-width: 420px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0%;
+    }
+
+
+    .header{
+        width: 100%;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .header_nav_ul li a{
+        font-size: 80%;
+    }
+
+    .header_a img{
+        display: none;
+    }
+
+    .section{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30%;
+        align-items: center;
+        margin: 0%;
+    }
+
+    .section_p{
+        margin: 0% 10%;
+        padding: 3%;
+        font-size: 170%;
+    }
+
+    .section img{
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .section_2{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+    }
+
+    .section_redes{
+        font-size: 70%;
+    }
+    
+    .contacto_ul li a img{
+        height: 15vh;
+        width: 15vw;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        width: 420px;
+    }
+
+    .footer_ul li a img{
+        height: 10vh;
+        width: 10vw;
+    }
+    
+    .section_libros{
+
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30%;
+        align-items: center;
+        margin: 0%;
+
+    }
+
+    .section_lh,.section_lh2{
+        font-size: 300%;
+    }
+
+    .section_libros img{
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .section_libros_productos{
+        margin:0% 0% 20% 0%;
+    }
+
+    .section_comics{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30%;
+        align-items: center;
+        margin: 0%;
+    }
+    .section_comics img{
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .section_ch, .section_p{
+        font-size: 300%;
+    }
+
+    .section_comics_productos{
+        margin:0% 0% 20% 0%;
+    }
+
+    .section_comics_productos img{
+        height: 25vh;
+        width:  17vw;
+    }
+
+    .section_ofertas{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30%;
+        align-items: center;
+        margin: 0%;
+    }
+
+    .mistborn_collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mistborn_collection div h2, .mistborn_collection div p{
+        font-size: 300%;
+    }
+
+    .harry_collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .harry_collection div h2, .harry_collection div p{
+        font-size: 300%;
+    }
+
+    .starwars_collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .starwars_collection div h2, .starwars_collection div p{
+        font-size: 300%;
+    }
+
+    .section_nosotros{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30%;
+        align-items: center;
+        margin: 0%;
+    }
+
+    .section_nosotros iframe{
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .section_nosotros p{
+        font-size: 300%;
+    }
+
+
+
+} 
+
+/* Tablet */
+@media only screen and (min-width:421px ) and (max-width:960px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0%;
+    }
+
+
+    .header{
+        width: 100%;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .header_nav_ul li a{
+        font-size: 100%;
+    }
+
+    .header_a img{
+        display: none;
+    }
+
+    .section{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 40%;
+        align-items: center;
+        margin: 0%;
+    }
+
+    .section_p{
+        margin: 0% 10%;
+        padding: 3%;
+        font-size: 270%;
+    }
+
+    .section img{
+        height: 40vh;
+        width: 40vw;
+    }
+
+    .section_2{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0% 0% 10% 0%;
+
+    }
+
+    .section_redes{
+        font-size: 70%;
+    }
+    
+    .contacto_ul li a img{
+        height: 25vh;
+        width: 25vw;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .footer_ul li a img{
+        height: 7vh;
+        width: 7vw;
+    }
+    
+    .section_libros{
+
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 40%;
+        align-items: center;
+        margin: 0%;
+
+    }
+
+    .section_lh,.section_lh2{
+        font-size: 300%;
+    }
+
+    .section_libros img{
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .section_libros_productos{
+        margin:0% 0% 20% 0%;
+    }
+
+    .section_comics{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 40%;
+        align-items: center;
+        margin: 0%;
+    }
+    .section_comics img{
+        height: 45vh;
+        width: 85vw;
+    }
+
+    .section_ch, .section_p{
+        font-size: 300%;
+    }
+
+    .section_comics_productos{
+        margin:0% 0% 20% 0%;
+    }
+
+    .section_comics_productos img{
+        height: 25vh;
+        width:  17vw;
+    }
+
+    .section_ofertas{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 40%;
+        align-items: center;
+        margin: 0% 0% 10% 0%;
+    }
+
+    .mistborn_collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mistborn_collection div h2, .mistborn_collection div p{
+        font-size: 350%;
+    }
+
+    .harry_collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .harry_collection div h2, .harry_collection div p{
+        font-size: 350%;
+    }
+
+    .starwars_collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .starwars_collection div h2, .starwars_collection div p{
+        font-size: 350%;
+    }
+
+    .section_nosotros{
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30%;
+        align-items: center;
+        margin: 0% 0% 10% 0%;
+    }
+
+    .section_nosotros iframe{
+        width: 90vw;
+        height: 45vh;
+    }
+
+    .section_nosotros p{
+        font-size: 400%;
+    }
+
+    
+
+} 
